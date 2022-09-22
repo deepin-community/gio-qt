@@ -1,0 +1,32 @@
+gio-qt (0.0.11-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upload to unstable.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 15 Aug 2021 23:02:29 -0400
+
+gio-qt (0.0.10-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+    + Switch from GPL-3+ to LGPL-3+.
+  * debian/copyright: Update accordingly.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 03 Apr 2021 10:20:13 -0400
+
+gio-qt (0.0.9-1) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control:
+    + Bump Standards-Version to 4.5.1.
+  * debian/rules:
+    + Minor cleanup and ensure proper build.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Sun, 27 Dec 2020 18:01:35 +0545
+
+gio-qt (0.0.9-1~exp1) experimental; urgency=medium
+
+  * Initial release.
+
+ -- Arun Kumar Pariyar <openarungeek@gmail.com>  Wed, 24 Jun 2020 10:10:02 +0545

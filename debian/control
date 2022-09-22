@@ -1,0 +1,61 @@
+Source: gio-qt
+Section: libs
+Priority: optional
+Maintainer: Debian Deepin Packaging Team <pkg-deepin-devel@lists.alioth.debian.org>
+Uploaders:
+ Boyuan Yang <byang@debian.org>,
+ Arun Kumar Pariyar <openarungeek@gmail.com>,
+Build-Depends:
+ cmake (>= 3.7),
+ debhelper-compat (= 13),
+ doxygen,
+ libglibmm-2.4-dev,
+ pkg-config,
+ qtbase5-dev,
+ qttools5-dev-tools,
+Rules-Requires-Root: no
+Standards-Version: 4.5.1
+Homepage: https://github.com/linuxdeepin/gio-qt
+Vcs-Browser: https://salsa.debian.org/pkg-deepin-team/gio-qt
+Vcs-Git: https://salsa.debian.org/pkg-deepin-team/gio-qt.git
+
+Package: libgio-qt-dev
+Architecture: any
+Section: libdevel
+Depends:
+ libgio-qt0 (= ${binary:Version}),
+ libglibmm-2.4-dev,
+ ${misc:Depends},
+Multi-Arch: same
+Description: Gio wrapper for Qt5 (development files)
+ Gio-qt provides Gio wrapper for Qt5.
+ .
+ This package provides the library development files.
+ .
+ This package is part of DDE (Deepin Desktop Environment).
+
+Package: libgio-qt-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+Description: Gio wrapper for Qt5 (documentation files)
+ Gio-qt provides Gio wrapper for Qt5.
+ .
+ This package provides the library documentation files.
+ .
+ This package is part of DDE (Deepin Desktop Environment).
+
+Package: libgio-qt0
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Gio wrapper for Qt5
+ Gio-qt provides Gio wrapper for Qt5.
+ .
+ This package provides the library files.
+ .
+ This package is part of DDE (Deepin Desktop Environment).
