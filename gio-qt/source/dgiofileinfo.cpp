@@ -1,23 +1,7 @@
-/*
- * Copyright (C) 2019 Deepin Technology Co., Ltd.
- *
- * Author:     Gary Wang <wzc782970009@gmail.com>
- *
- * Maintainer: Gary Wang <wangzichong@deepin.com>
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+// SPDX-FileCopyrightText: 2019 - 2022 UnionTech Software Technology Co., Ltd.
+//
+// SPDX-License-Identifier: LGPL-3.0-or-later
+
 #include "dgiofileinfo.h"
 #include "dgiohelper.h"
 
@@ -155,7 +139,7 @@ QString DGioFileInfo::contentType() const
  *
  * Wrapper of Gio::FileInfo::get_icon() and then Gio::Icon::to_string().
  *
- * Notice the returned value can be in two different form:
+ * Notice the returned value can be in two different forms:
  *
  *  - a native path (such as "/path/to/my icon.png") without escaping if the file for icon is a native
  *    file. If the file is not native, the returned string is the result of g_file_get_uri()
@@ -164,7 +148,7 @@ QString DGioFileInfo::contentType() const
  *  - a icon name if icon is a ThemedIcon with exactly one name, the encoding is simply the name (such as
  *    network-server), or a list of theme names (such as ". GThemedIcon text-plain text-x-generic text-plain-symbolic").
  *
- * \return the icon string as discribed above.
+ * \return the icon string as described above.
  */
 QString DGioFileInfo::iconString() const
 {
